@@ -1,0 +1,37 @@
+{
+  "name": "weixue-test-npm-package",
+  "private": false,
+  "version": "0.0.5",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5",
+    "vite-plugin-libcss": "^1.1.1"
+  },
+  "files": [
+    "dist",
+    "dist/**"
+  ],
+   "main": "./dist/wang-ui.umd.js",
+   "module": "./dist/wang-ui.es.js",
+   "exports":{
+    ".":{
+      "import":"./dist/wang-ui.es.js",
+      "require":"./dist/wang-ui.umd.js"
+   },
+   "./dist/style.css":"./dist/style.css"
+  },
+  "email" : "1655107866@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gossip-girl/hui.git"
+  }
+}
